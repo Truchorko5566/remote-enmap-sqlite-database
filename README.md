@@ -25,7 +25,7 @@
 
 # Instalación
 ```
-instalación de npm https://github.com/Truchorko5566/remote-enmap-sqlite-database
+npm install https://github.com/Truchorko5566/remote-enmap-sqlite-database
 npm install remote-enmap-sqlite-database
 ```
 
