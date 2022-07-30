@@ -5,7 +5,7 @@
   },
   "name": "remote-enmap-sqlite-database",
   "version": "1.0.4",
-  "description": "A remote nodejs Cached sqlite Database Server, for you to have your perfect MAP Cache Saved and useable remotely. Easy Server and Client Creations, fast, stores the Cache before stopping and restores it again! it uses ENMAP",
+  "description": "Un servidor de base de datos sqlite en caché de nodejs remoto, para que tenga su caché MAP perfecto guardado y utilizable de forma remota. Easy Server and Client Creations, rápido, almacena el caché antes de detenerlo y lo restaura nuevamente. utiliza ENMAP",
   "main": "index.js",
   "directories": {
     "lib": "lib"

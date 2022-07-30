@@ -16,24 +16,24 @@
 </div>
 
 # remote-enmap-sqlite-database
-- A remote nodejs Database using sqlite
-- It has auto-restore features
-- It is fast
-- It uses enmap aka sqlite
-- The clients are cached
-- Supports **SHARDED** Applications (like Discord Bots, which used enmap before)
+- Una base de datos nodejs remota usando sqlite
+- Tiene funciones de restauración automática
+- Es rápido
+- Utiliza enmap aka sqlite
+- Los clientes se almacenan en caché
+- Admite aplicaciones **SHARDED** (como Discord Bots, que usaba enmap antes)
 
-# Installation
+# Instalación
 ```
-npm install https://github.com/Truchorko5566/remote-enmap-sqlite-database
+instalación de npm https://github.com/Truchorko5566/remote-enmap-sqlite-database
 npm install remote-enmap-sqlite-database
 ```
 
-# Usage
-1. Create the DB  - Create a File-Folder-Project, at your CACHE-SERVER (it's a cache and db at the same time) and put in this Code:
+# Uso
+1. Cree la base de datos: cree un proyecto de carpeta de archivos, en su CACHE-SERVER (es un caché y una base de datos al mismo tiempo) e ingrese este código:
 
 <details>
-  <summary>Click to see the Code</summary>
+  <summary>Click para ver el Código</summary>
 
 ```js
 const { remoteCacheServer } = require("remote-enmap-sqlite-database");
@@ -43,11 +43,11 @@ const Server = new remoteCacheServer({
     password: "ThePasswordForTheCacheServer",
     name: "databaseName",
     dataDir: "./path/to/database/",
-    port: 4040, // Any port
+    port: 4040, // Cualquier puerto
     tls: true,
-    debug: false // if enabled u see all the actions ;)
+    debug: false // si está habilitado, verá todas las acciones;)
 });
-// Following Events are optional
+// Los siguientes eventos son opcionales
 Server
     .on("serverReady", () => {
         console.log("DatabaseCacheServer ready and waiting for connections");
@@ -74,10 +74,10 @@ Server
   
 </details>
 
-2. To connect the cache do this:
+2. Para conectar el caché, haga esto:
 
 <details>
-  <summary>Click to see the Code</summary>
+  <summary>Click para ver el Código</summary>
 
 ```js
 const { remoteCacheClient } = require("remote-enmap-sqlite-database");
@@ -89,9 +89,9 @@ const client = new remoteCacheClient({
     tls: true,
     keyPathing: true, // true|false ... enables if the key contains a "." that it's splitted to a path, e.g.: "hello.world.hi" --> key = "hello", path = "world.hi", db.get("hello") --> {world: {hi: "value"}}
 }); 
-//keyPathing should be set to false, if you want to do "key.hello" as a key
+//keyPathing debe establecerse en falso, si desea hacer "key.hello" como clave
 
-// following events are optional
+// los siguientes eventos son opcionales
 client
     .on("cacheReady", () => {
         console.log("DATABASECACHECLIENT ready and connected");
@@ -109,7 +109,7 @@ client
         console.log("REQUEST", request);
     });
 
-// example usage
+// ejemplo de uso
 async function yourProgram(){
     await client.set("hi", "bye").then(console.log).catch(console.error);
     await client.get("hi").then(console.log).catch(console.error);
@@ -125,7 +125,7 @@ yourProgram();
 ```
 </details>
 
-# Methods (Functions) for the CACHE-CLIENT(s)
+# Métodos (Funciones) para CACHE-CLIENT(s)
 - *all "path"'s are optional*
 - get(key, path) *get any value from a key*
 - set(key, path) *set any value in a key*
@@ -144,7 +144,7 @@ yourProgram();
 - size() *shows the cache-map-size*
 - ensure(key, data, path) *ensures data in the db*
 
-# Events for the CACHE-SERVER
+# Eventos para el CACHE-SERVER
 
 - serverReady *shows when the server is ready, you don't need to listen to it!*
 - serverError *shows when the server errors, you don't need to listen to it!*
