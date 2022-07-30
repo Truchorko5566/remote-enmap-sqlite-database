@@ -4,7 +4,7 @@
     "net-ipc": "^2.0.1"
   },
   "name": "remote-enmap-sqlite-database",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "description": "Un servidor de base de datos sqlite en caché de nodejs remoto, para que tenga su caché MAP perfecto guardado y utilizable de forma remota. Easy Server and Client Creations, rápido, almacena el caché antes de detenerlo y lo restaura nuevamente. utiliza ENMAP",
   "main": "index.js",
   "directories": {
