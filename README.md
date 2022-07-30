@@ -1,21 +1,21 @@
 <div align="center">
   <p> 
-    <a href="https://discord.gg/milrato" title="Join our Discord Server"><img alt="Built with Love" src="https://forthebadge.com/images/badges/built-with-love.svg"></a>
-    <a href="https://discord.gg/milrato" title="Join our Discord Server"><img alt="Made with Javascript" src="https://forthebadge.com/images/badges/made-with-javascript.svg"></a>
+    <a href="https://discord.gg/utmuExHwyT" title="Join our Discord Server"><img alt="Built with Love" src="https://forthebadge.com/images/badges/built-with-love.svg"></a>
+    <a href="https://discord.gg/utmuExHwyT" title="Join our Discord Server"><img alt="Made with Javascript" src="https://forthebadge.com/images/badges/made-with-javascript.svg"></a>
   </p>
   <p>
-    <a href="https://discord.gg/milrato"><img src="https://discord.com/api/guilds/773668217163218944/embed.png" alt="Discord server"/></a>
-    <a href="https://www.npmjs.com/package/remote-sqlite-database"><img src="https://img.shields.io/npm/v/remote-sqlite-database.svg?maxAge=3600" alt="NPM version" /></a>
-    <a href="https://www.npmjs.com/package/remote-sqlite-database"><img src="https://img.shields.io/npm/dt/remote-sqlite-database.svg?maxAge=3600" alt="NPM downloads" /></a>
-    <a href="https://discord.gg/milrato"><img src="https://maintained.cc/SDBagel/Maintained/2?" alt="Get Started Now"></a>
-    <a href="https://www.paypal.com/MilratoDevelopment"><img src="https://img.shields.io/badge/donate-patreon-F96854.svg" alt="Patreon" /></a>
+    <a href="https://discord.gg/utmuExHwyT"><img src="https://discord.com/api/guilds/935157109761388554/embed.png" alt="Discord server"/></a>
+    <a href="https://www.npmjs.com/package/remote-enmap-sqlite-database"><img src="https://img.shields.io/npm/v/remote-enmap-sqlite-database.svg?maxAge=3600" alt="NPM version" /></a>
+    <a href="https://www.npmjs.com/package/remote-enmap-sqlite-database"><img src="https://img.shields.io/npm/dt/remote-enmap-sqlite-database.svg?maxAge=3600" alt="NPM downloads" /></a>
+    <a href="https://discord.gg/utmuExHwyT"><img src="https://maintained.cc/SDBagel/Maintained/2?" alt="Get Started Now"></a>
+    <a href="https://www.paypal.com/TruchorkoyRocket"><img src="https://img.shields.io/badge/donate-patreon-F96854.svg" alt="Patreon" /></a>
   </p>
   <p>
-    <a href="https://npmjs.com/package/remote-sqlite-database/"><img src="https://nodei.co/npm/remote-sqlite-database.png?downloads=true&stars=true" alt="npm installnfo" /></a>
+    <a href="https://npmjs.com/package/remote-enmap-sqlite-database/"><img src="https://nodei.co/npm/remote-enmap-sqlite-database.png?downloads=true&stars=true" alt="npm installnfo" /></a>
   </p>
 </div>
 
-# remote-sqlite-database
+# remote-enmap-sqlite-database
 - A remote nodejs Database using sqlite
 - It has auto-restore features
 - It is fast
@@ -25,8 +25,8 @@
 
 # Installation
 ```
-npm install https://github.com/Tomato6966/remote-sqlite-database
-npm install remote-sqlite-database
+npm install https://github.com/Truchorko5566/remote-enmap-sqlite-database
+npm install remote-enmap-sqlite-database
 ```
 
 # Usage
@@ -36,7 +36,7 @@ npm install remote-sqlite-database
   <summary>Click to see the Code</summary>
 
 ```js
-const { remoteCacheServer } = require("remote-sqlite-database");
+const { remoteCacheServer } = require("remote-enmap-sqlite-database");
 
 const Server = new remoteCacheServer({
     username: "TheUserNameForTheCacheServer",
@@ -80,7 +80,7 @@ Server
   <summary>Click to see the Code</summary>
 
 ```js
-const { remoteCacheClient } = require("remote-sqlite-database");
+const { remoteCacheClient } = require("remote-enmap-sqlite-database");
 const client = new remoteCacheClient({
     username: "db_cache",
     password: "db_cache",
